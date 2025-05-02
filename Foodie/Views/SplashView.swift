@@ -8,20 +8,28 @@
 import SwiftUI
 
 struct SplashView: View {
+    
+    @State var isActive: Bool = false
+    
     var body: some View {
         ZStack {
-            Rectangle()
-                .background(Color.orange)
-            Image("foodietitle")
-                .resizable()
-                .scaledToFit()
-            
-            Image("foodielogo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
+            if self.isActive {
+                MainView()
+            } else {
+                
+                TitleView()
+               
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 100) {
+                withAnimation {
+                    self.isActive = true
+                }
+            }
         }
     }
+        
 }
 
 #Preview {
