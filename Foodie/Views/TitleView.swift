@@ -9,17 +9,22 @@ import SwiftUI
 
 struct TitleView: View {
     var body: some View {
-        VStack {
-            Rectangle()
-                .background(Color.orange)
-            Image("foodietitle")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 300, height: 300)
-            Image("foodielogo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
+        
+        Color.orange.opacity(0.5)
+                    .ignoresSafeArea()
+                    .overlay {
+                        VStack {
+                            Image("foodietitle")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 300, height: 300)
+                            Spacer()
+                            Image("foodielogo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 200, height: 200)
+                            Spacer()
+            }
         }
     }
 }

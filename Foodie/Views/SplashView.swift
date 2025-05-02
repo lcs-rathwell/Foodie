@@ -22,7 +22,7 @@ struct SplashView: View {
             }
         }
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 100) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {
                     self.isActive = true
                 }
