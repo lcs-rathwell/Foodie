@@ -15,6 +15,7 @@
 		AC58D0DB2DC4FC0F00A6731D /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58D0DA2DC4FC0F00A6731D /* SplashView.swift */; };
 		AC58D0DD2DC4FE2B00A6731D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58D0DC2DC4FE2B00A6731D /* MainView.swift */; };
 		AC58D0DF2DC5021B00A6731D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58D0DE2DC5021B00A6731D /* TitleView.swift */; };
+		AC58D0E32DCA98CE00A6731D /* FavouritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC58D0E22DCA98CE00A6731D /* FavouritesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AC58D0DA2DC4FC0F00A6731D /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		AC58D0DC2DC4FE2B00A6731D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AC58D0DE2DC5021B00A6731D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		AC58D0E22DCA98CE00A6731D /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				AC58D0DA2DC4FC0F00A6731D /* SplashView.swift */,
 				AC58D0DC2DC4FE2B00A6731D /* MainView.swift */,
 				AC58D0DE2DC5021B00A6731D /* TitleView.swift */,
+				AC58D0E22DCA98CE00A6731D /* FavouritesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				AC58D0D52DC2816500A6731D /* Model.swift in Sources */,
 				AC58D0DD2DC4FE2B00A6731D /* MainView.swift in Sources */,
 				AC58D0D22DC2812F00A6731D /* FoodieApp.swift in Sources */,
+				AC58D0E32DCA98CE00A6731D /* FavouritesView.swift in Sources */,
 				AC58D0DF2DC5021B00A6731D /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

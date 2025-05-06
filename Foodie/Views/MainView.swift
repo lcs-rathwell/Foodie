@@ -4,20 +4,43 @@
 //
 //  Created by Jack William Rathwell on 2025-05-02.
 //
-//MARK: This Splash Screen was made with a tutorial from https://medium.com/@liyicky/how-to-make-a-splash-screen-in-swift-ui-83b02984a6ab
+
 import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .onAppear() {
-                print("MainView Showing")
+        Color.orange
+            .opacity(0.5)
+            .ignoresSafeArea()
+            .overlay{
+                VStack {
+                    Image("foodietitle")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 300)
+                    Spacer()
+                    TabView(selection: Binding.constant(1)) {
+                        
+                        MainView()
+                            .tabItem {
+                                Image(systemName: "globe")
+                                Text("Home")
+                            }
+                            .tag(1)
+                        
+                        FavouritesView()
+                            .tabItem {
+                                Image(systemName: "alarm.fill")
+                                Text("Favourites")
+                            }
+                            .tag(2)
+                }
             }
-        
+        }
     }
 }
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
+
+#Preview {
+    MainView()
 }
+
